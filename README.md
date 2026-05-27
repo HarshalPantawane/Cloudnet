@@ -150,7 +150,6 @@ Creates:
 - EC2 Auto scaling group
 - CloudWatch Agent setup
 - Application runtime provisioning
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Runtime Bootstrapping
 EC2 User data performs:
@@ -159,7 +158,6 @@ EC2 User data performs:
 3. Configure environment variables
 4. Start Spring Boot application
 5. Configure Cloudwatch logs
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Auto Scaling Configuration
 Variable                               Purpose
