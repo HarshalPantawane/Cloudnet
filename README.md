@@ -101,6 +101,7 @@ Stack 2 -- AWS Application Infrastucture
 -----------------------------------------------------------------------------------------------------------------------------------------------
 Purpose
 Harshal-stack-2 provisions the primary application platform infrastucture on AWS.
+
 It includes:
 
 - Networking
@@ -114,7 +115,9 @@ It includes:
 Infrastructure Architecture
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Networking Layer
+
 Module: networking
+
 Creates:
 - VPC
 - Public subnets
@@ -126,6 +129,7 @@ Creates:
 Load Balancing Layer
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Module: loadbalancing
+
 Creates:
 
 External ALB
@@ -139,17 +143,17 @@ Handles:
 - Backend TCP traffic
 - internal service routing
 
-Target Groups
-------------------------------------------------------------------------------------------------------------------------------------------------
+Target Groups.
 Target Group                Protocol                 Port
+------------------------------------------------------------------------------------------------------------------------------------------------
+1.Backend                     TCP                      8084
 
-Backend                     TCP                      8084
-
-Frontend                    HTTP                     8501
+2.Frontend                    HTTP                     8501
 
 Compute Layer
 ------------------------------------------------------------------------------------------------------------------------------------------------
 Module: autoscaling
+
 Creates:
 - Launch Templates
 - IAM roles
@@ -166,6 +170,6 @@ EC2 User data performs:
 4. Start Spring Boot application
 5. Configure Cloudwatch logs
 
-Auto Scaling Configuration
+Auto Scaling Configuration.
 Variable                               Purpose
 ------------------------------------------------------------------------------------------------------------------------------------------------
