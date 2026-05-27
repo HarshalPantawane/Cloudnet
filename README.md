@@ -363,6 +363,17 @@ Sends CloudWatch alerts directly to Slack.
 # Infrastructure Workflow
 
 ```mermaid
+sequenceDiagram
+    participant User
+    participant CloudFront
+    participant ALB
+    participant NLB
+    participant EC2
+    participant RDS
+    participant CloudWatch
+    participant SNS
+    participant Lambda
+    participant Slack
 
     User->>CloudFront: Request
     CloudFront->>ALB: Forward Request
