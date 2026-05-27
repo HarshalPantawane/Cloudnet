@@ -5,21 +5,24 @@ Overview
 CloudNet is a Terraform-based AWS infrastructure platform designed to provision and manage a scalable cloud-native application environment.
 
 The project is split into two independent Terraform stacks:
-Stack                  Purpose
 --------------------------------------------------------------------------------------------------------------------------------------------
-Harshal-stack-1     	Creates S3 infrastructure and Terraform remote state dependencies
-Harshal-stack-2	      Deploys the primary application infrastructure platform on AWS
+Stack                  Purpose
+
+Harshal-stack-1     	Creates S3 infrastructure and Terraform remote state dependencies.
+
+Harshal-stack-2	      Deploys the primary application infrastructure platform on AWS.
+
 
 The platform provisions:
 --------------------------------------------------------------------------------------------------------------------------------------------
-AWS networking infrastructure
-Auto Scaling compute layer
-Internal and external load balancing
-MySQL RDS database
-CloudFront CDN
-Monitoring and alerting
-Slack notification delivery
-Terraform remote state architecture
+- AWS networking infrastructure.
+- Auto Scaling compute layer.
+- Internal and external load balancing.
+- MySQL RDS database.
+- CloudFront CDN.
+- Monitoring and alerting.
+- Slack notification delivery.
+- Terraform remote state architecture.
 
 Architecture Overview
 ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -60,9 +63,9 @@ Purpose
 
 Harshal-stack-1 provisions the foundational S3 infrastructure required for:
 
-- Application artifact storage
-- Terraform remote state management
-- Cross-stack dependency sharing
+- Application artifact storage.
+- Terraform remote state management.
+- Cross-stack dependency sharing.
 
 This stack must be deployed before Stack 2.
 
@@ -137,8 +140,9 @@ Handles:
 - internal service routing
 
 Target Groups
-Target Group                Protocol                 Port
 ------------------------------------------------------------------------------------------------------------------------------------------------
+Target Group                Protocol                 Port
+
 Backend                     TCP                      8084
 
 Frontend                    HTTP                     8501
