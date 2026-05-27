@@ -510,7 +510,7 @@ Potential enhancements for the platform:
 
 # Summary
 
-CloudNet provides a modular AWS infrastructure platform using Terraform and AWS managed services. The architecture is designed for scalability, monitoring, secure networking, automated deployment, and operational visibility.
+Cloudnet provides a modular AWS infrastructure platform using Terraform and AWS managed services. The architecture is designed for scalability, monitoring, secure networking, automated deployment, and operational visibility.
 
 The platform includes:
 
